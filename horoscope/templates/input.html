@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<form method="post">
+
+    <label>Horo: </label>
+    <label>
+        <input list="horo" name="horo">
+    </label>
+    <datalist id="horo">
+        <option value="aries"></option>
+        <option value="taurus"></option>
+        <option value="gemini"></option>
+        <option value="cancer"></option>
+        <option value="leo"></option>
+        <option value="virgo"></option>
+        <option value="libra"></option>
+        <option value="scorpio"></option>
+        <option value="sagittarius"></option>
+        <option value="capricorn"></option>
+        <option value="aquarius"></option>
+        <option value="pisces"></option>
+    </datalist>
+
+    <label>Period: </label>
+    <label>
+        <input list="period" name="period">
+    </label>
+    <datalist id="period">
+        <option value="today"></option>
+        <option value="tomorrow"></option>
+        <option value="week"></option>
+        <option value="month"></option>
+        <option value="year"></option>
+    </datalist>
+    <input type="submit"/>
+    {% csrf_token %}
+
+</form>
+
+</body>
+</html>
